@@ -17,6 +17,7 @@ import {
   Footer
 } from './styles';
 import { Button } from '../../components/Button';
+import { Calendar } from '../../components/Calendar'
 
 
 export function Scheduling() {
@@ -43,7 +44,7 @@ export function Scheduling() {
             <RentalPeriod>
                 <DateInfo>
                     <DateTitle>DE</DateTitle>
-                    <DateValue selected={false}>
+                    <DateValue selected={true}>
                         18/06/2021
                     </DateValue>
                 </DateInfo>
@@ -52,7 +53,7 @@ export function Scheduling() {
 
                 <DateInfo>
                     <DateTitle>ATÉ</DateTitle>
-                    <DateValue selected={false}>
+                    <DateValue selected={true}>
                         18/06/2021
                     </DateValue>
                 </DateInfo>
@@ -60,7 +61,14 @@ export function Scheduling() {
 
          </Header>
 
-         <Content></Content>
+         <Content>
+             
+             <Calendar 
+             
+             
+             />
+
+         </Content>
 
          <Footer>
              <Button title='Confirmar'/>
