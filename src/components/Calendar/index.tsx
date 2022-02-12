@@ -21,15 +21,17 @@ LocaleConfig.defaultLocale = 'pt-br'
 export function Calendar() {
 
   const theme = useTheme();
+  const currentDate = new Date().toString();
 
   return (
      <CustomCalendar
+       minDate={currentDate}
        renderArrow={(direction) => 
-        <Feather
-        size={24}
-        color={theme.colors.text}
-        name={direction == 'left' ? 'chevron-left' : 'chevron-right'}
-        />
+          <Feather
+          size={24}
+          color={theme.colors.text}
+          name={direction == 'left' ? 'chevron-left' : 'chevron-right'}
+          />
       }
       headerStyle={{
           backgroundColor: theme.colors.background_secondary,
@@ -52,7 +54,7 @@ export function Calendar() {
       }}
 
       firstDay={1}
-      minDate={new Date()}
+      
 
     />
   );
