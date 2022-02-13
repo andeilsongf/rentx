@@ -52,7 +52,7 @@ export const DateValue = styled.Text<DateValueProps>`
 
     ${({ selected, theme }) => !selected && css`
      border-bottom-width: 1px;
-     border-bottom-color: ${theme.colors.text};
+     border-bottom-color: ${theme.colors.shape};
      padding-bottom: 5px;
     `}
 `;

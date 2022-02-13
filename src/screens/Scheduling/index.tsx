@@ -45,8 +45,8 @@ export function Scheduling() {
             <RentalPeriod>
                 <DateInfo>
                     <DateTitle>DE</DateTitle>
-                    <DateValue selected={true}>
-                        18/06/2021
+                    <DateValue selected={false}>
+                        
                     </DateValue>
                 </DateInfo>
 
@@ -54,8 +54,8 @@ export function Scheduling() {
 
                 <DateInfo>
                     <DateTitle>ATÉ</DateTitle>
-                    <DateValue selected={true}>
-                        18/06/2021
+                    <DateValue selected={false}>
+                        
                     </DateValue>
                 </DateInfo>
             </RentalPeriod>
@@ -64,10 +64,7 @@ export function Scheduling() {
 
          <Content>
              
-             <Calendar 
-             
-             
-             />
+             <Calendar/>
 
          </Content>
 
