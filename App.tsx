@@ -15,8 +15,8 @@ import {
 } from '@expo-google-fonts/archivo';
 
 import {
-  SchedulingDetails
-} from './src/screens/SchedulingDetails';
+  SchedulingComplete
+} from './src/screens/SchedulingComplete';
 import theme from './src/styles/theme';
 
 export default function App() {
@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <SchedulingDetails />
+      <SchedulingComplete />
     </ThemeProvider>
   )
  
