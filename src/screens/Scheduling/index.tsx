@@ -29,6 +29,10 @@ export function Scheduling() {
   function handleConfirmRental() {
     navigation.navigate('SchedulingDetails')
   }
+
+  function handleBack() {
+    navigation.goBack();
+  }
   
 
   return (
@@ -40,7 +44,7 @@ export function Scheduling() {
              backgroundColor="transparent"    
              />
 
-             <BackButton onPress={() => {}}
+             <BackButton onPress={handleBack}
              color={theme.colors.shape} />
              <Title>
                  Escolha uma {'\n'}
